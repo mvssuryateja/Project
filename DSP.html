@@ -173,8 +173,7 @@ of same features for both recognition systems cannot guarantee good performance.
 					<div class="text">
 
 						<!-- Start edit here  -->
-						We have taken a <a href = "https://drive.google.com/open?id=1EPXUoW1saEDBKE0AnEKNCePZlUEHTezf" title = "Click here for Datasets!" target = "_blank">DATASET</a> which contains a test dataset and a training dataset with both male and female speech samples.The test and training datasets contains 590
-voice samples each of each gender.
+						We have taken a <a href = "https://drive.google.com/open?id=1EPXUoW1saEDBKE0AnEKNCePZlUEHTezf" title = "Click here for Datasets!" target = "_blank">DATASET</a> which contains a test dataset and a training dataset with both male and female speech samples.
 						<!-- Stop edit here -->
 
 					</div>
@@ -198,7 +197,13 @@ voice samples each of each gender.
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						The approach we followed is based on Supervised learning. we have extracted MFCC, Delta MFCC, Delta-Delta MFCC vectors for the trianing data sets for both male and 
+female. Then we have used Spherical K-Means algorithm to which we feed both male and female training data sets and generate 2 clusters. The clusters of male and female
+or otherwise the bag of words are recognized by comparing them to the means generated from male and female training sets seperately. Next we will feed the test datasets
+of male and female and compare each column vector with column vectors of means from the bag of words which then decides the gender.
+
+
+
 						<!-- Stop edit here -->
 
 					</div>
